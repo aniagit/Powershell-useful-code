@@ -13,7 +13,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE RSP_P_ReportSQL_' +$Code+
-'AS
+' AS
 BEGIN '
 $Procedure | Out-File -FilePath  $path
 Add-Content $path $Fragment
